@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schame = mongoose.Schema;
 
 
-const Cadastrar  =  new Schame({
+const Conta  =  new Schame({
     Data:{
     type:String,
     required:true
@@ -21,4 +21,4 @@ const Cadastrar  =  new Schame({
   }
 })
 
-module.exports = mongoose.model('Cadastros_Credito' , Cadastrar)
+module.exports = mongoose.model('Cadastros_Credito' , Conta)
