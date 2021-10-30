@@ -3,11 +3,11 @@ const express = require('express');
 const route = express.Router();
 
 
-//! Sirve para acresentar los datos que vienes del body
+//! Sirve para acresentar los datos que vienen del body
 route.post('/add' , async(req , res , next) =>{
    try{
-    const cadastro = Conta(req.body);
-    await cadastro.save()
+    const conta = Conta(req.body);
+    await conta.save()
    }catch(e){
        return next(e)
    } res.send('Dato Salvo')
